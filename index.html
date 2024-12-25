@@ -657,6 +657,8 @@ body {
     <div class="subject-card contabilidade" onclick="selectSubject(&apos;contabilidade&apos;)">Contabilidade</div>
     <div class="subject-card fisica" onclick="selectSubject(&apos;fisica&apos;)">F&#xed;sica</div>
   </div>
+  <div class="subject-card bibila" onclick="selectSubject(&apos;biblia&apos;)">biblia</div>
+</div>
 
   <div id="questionContainer" class="question-container" style="display: none;">
     <div class="progress-bar">
@@ -756,10 +758,10 @@ let subjectProgress = {};
 function initializeDefaultAccounts() {
   const approvedUsers = JSON.parse(localStorage.getItem('approvedUsers')) || [];
   if (approvedUsers.length === 0) {
-    for (let i = 1; i <= 250; i++) {
+    for (let i = 1; i <= 10; i++) {
       approvedUsers.push({
         name: `Aluno${i}`,
-        email: `aluno${i}@example.com`,
+        email: `aluno${i}@gmail.com`,
         phone: '',
         academicLevel: 'medio',
         password: `senha${i}`,
@@ -1566,7 +1568,7 @@ function handleLogin() {
     }
     return;
   }
-  if (username === 'CWD' && accessCode === '6363') {
+  if (username === 'Administrador' && accessCode === '123456') {
     showAdminPanel();
     return;
   }
