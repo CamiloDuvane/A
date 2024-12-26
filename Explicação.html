@@ -1596,55 +1596,564 @@ function showStudentHistory() {
 }
 function getQuestionsBySubject(subject) {
   const questionsBySubject = {
+
+    
+  
     matematica: [{
-      question: "Quanto é 2 + 2?",
+      question: "Qual é a área de um triângulo com base de 8 cm e altura de 5 cm?",
+      options: ["20 cm²", "30 cm²", "40 cm²", "25 cm²"],
+      correct: 3
+    }, {
+      question: "Resolva: 3x + 2 = 11. Qual é o valor de x?",
+      options: ["2", "3", "4", "5"],
+      correct: 1
+    }, {
+      question: "Qual é o valor de 7²?",
+      options: ["14", "49", "21", "42"],
+      correct: 1
+    }, {
+      question: "Qual é o perímetro de um quadrado com lado de 6 cm?",
+      options: ["24 cm", "36 cm", "12 cm", "18 cm"],
+      correct: 0
+    }, {
+      question: "Resolva: 4x - 8 = 0. Qual é o valor de x?",
+      options: ["1", "2", "3", "4"],
+      correct: 1
+    }, {
+      question: "Qual é o valor de √64?",
+      options: ["6", "7", "8", "9"],
+      correct: 2
+    }, {
+      question: "Se um círculo tem um raio de 7 cm, qual é a sua área? (π ≈ 3,14)",
+      options: ["153,86 cm²", "140 cm²", "160 cm²", "170 cm²"],
+      correct: 0
+    }, {
+      question: "Resolva: 2(x - 3) = 8. Qual é o valor de x?",
+      options: ["5", "6", "7", "8"],
+      correct: 2
+    }, {
+      question: "Qual é a forma geométrica que possui 6 faces quadradas iguais?",
+      options: ["Cubo", "Cilindro", "Esfera", "Cone"],
+      correct: 0
+    }, {
+      question: "Quantos graus tem um ângulo reto?",
+      options: ["45°", "90°", "120°", "180°"],
+      correct: 1
+    }, {
+      question: "Qual é a soma dos ângulos internos de um triângulo?",
+      options: ["90°", "180°", "270°", "360°"],
+      correct: 1
+    }, {
+      question: "Quanto é 15% de 200?",
+      options: ["15", "30", "20", "25"],
+      correct: 1
+    }, {
+      question: "Qual é o valor de 3³?",
+      options: ["6", "9", "27", "81"],
+      correct: 2
+    }, {
+      question: "Quantos lados tem um hexágono?",
+      options: ["4", "5", "6", "7"],
+      correct: 2
+    }, {
+      question: "Resolva: 5x = 25. Qual é o valor de x?",
+      options: ["3", "4", "5", "6"],
+      correct: 2
+    }, {
+      question: "Qual é a fórmula da área de um círculo?",
+      options: ["πr", "2πr", "πr²", "2πr²"],
+      correct: 2
+    }, {
+      question: "Qual é a raiz quadrada de 81?",
+      options: ["7", "8", "9", "10"],
+      correct: 2
+    }, {
+      question: "Quanto é 100 ÷ 4?",
+      options: ["20", "25", "30", "40"],
+      correct: 1
+    }, {
+      question: "Um triângulo com dois lados iguais é chamado de:",
+      options: ["Equilátero", "Isósceles", "Escaleno", "Retângulo"],
+      correct: 1
+    }, {
+      question: "Quantos segundos há em uma hora?",
+      options: ["3600", "2400", "1800", "1200"],
+      correct: 0
+    }, {
+      question: "Qual é o menor número primo?",
+      options: ["0", "1", "2", "3"],
+      correct: 2
+    }, {
+      question: "Quanto é 7 x 8?",
+      options: ["48", "54", "56", "64"],
+      correct: 2
+    }, {
+      question: "Qual é o volume de um cubo com aresta de 5 cm?",
+      options: ["25 cm³", "100 cm³", "125 cm³", "150 cm³"],
+      correct: 2
+    }, {
+      question: "Qual é o valor de 2² + 3²?",
+      options: ["9", "13", "14", "18"],
+      correct: 1
+    }, {
+      question: "Quanto é 1/4 + 1/2?",
+      options: ["1/2", "3/4", "1", "5/4"],
+      correct: 1
+    }, {
+      question: "Se um retângulo tem 5 cm de largura e 10 cm de comprimento, qual é sua área?",
+      options: ["15 cm²", "25 cm²", "50 cm²", "75 cm²"],
+      correct: 2
+    }, {
+      question: "Quantos lados tem um dodecágono?",
+      options: ["8", "10", "12", "14"],
+      correct: 2
+    }, {
+      question: "Se x = 3, qual é o valor de 2x + 5?",
+      options: ["8", "9", "10", "11"],
+      correct: 3
+    }, {
+      question: "Qual é o nome da figura com 4 lados iguais e 4 ângulos retos?",
+      options: ["Quadrado", "Retângulo", "Losango", "Trapézio"],
+      correct: 0
+    }, {
+      question: "Quanto é 0,2 x 0,5?",
+      options: ["0,01", "0,1", "0,2", "0,25"],
+      correct: 3
+    }, {
+      question: "Qual é o maior divisor comum de 18 e 24?",
+      options: ["2", "3", "6", "9"],
+      correct: 2
+    }, {
+      question: "Quanto é 2⁵?",
+      options: ["16", "25", "32", "64"],
+      correct: 2
+    }, {
+      question: "Resolva: 10 - (2 + 3).",
       options: ["3", "4", "5", "6"],
       correct: 1
     }, {
-      question: "Qual é a raiz quadrada de 16?",
-      options: ["2", "4", "6", "8"],
+      question: "Se 1 metro = 100 cm, quantos centímetros há em 2,5 metros?",
+      options: ["200 cm", "250 cm", "300 cm", "350 cm"],
       correct: 1
-    }],
-    portugues: [{
-      question: "Qual é o plural de 'café'?",
-      options: ["cafés", "cafezs", "cafesses", "cafez"],
+    }, {
+      question: "Quanto é 5! (fatorial de 5)?",
+      options: ["20", "60", "100", "120"],
+      correct: 3
+    }, {
+      question: "Resolva: x/4 = 6. Qual é o valor de x?",
+      options: ["12", "16", "20", "24"],
+      correct: 3
+    }, {
+      question: "Quanto é a metade de 3/4?",
+      options: ["1/8", "3/8", "1/2", "5/8"],
+      correct: 1
+    }, {
+      question: "Qual é o nome do polígono com 8 lados?",
+      options: ["Pentágono", "Heptágono", "Octógono", "Decágono"],
+      correct: 2
+    }, {
+      question: "Qual é a área de um quadrado com lado de 9 cm?",
+      options: ["18 cm²", "36 cm²", "45 cm²", "81 cm²"],
+      correct: 3
+    }, {
+      question: "Resolva: 3² + 4².",
+      options: ["12", "16", "25", "32"],
+      correct: 2
+    }, {
+      question: "Quanto é 3/4 de 16?",
+      options: ["8", "10", "12", "14"],
+      correct: 2
+    }, {
+      question: "Qual é o valor de 100% de 50?",
+      options: ["25", "50", "75", "100"],
+      correct: 1
+    }, {
+      question: "Quanto é 1/3 + 1/6?",
+      options: ["1/6", "1/3", "1/2", "2/3"],
+      correct: 2
+    }, {
+      question: "Se um ângulo mede 45°, qual é o seu ângulo complementar?",
+      options: ["45°", "90°", "135°", "180°"],
       correct: 0
     }, {
-      question: "Qual é o antônimo de 'feliz'?",
-      options: ["triste", "contente", "alegre", "satisfeito"],
-      correct: 0
+      question: "Qual é o valor de 8²?",
+      options: ["48", "56", "64", "72"],
+      correct: 2
+    }, {
+      question: "Quanto é 0,01 x 1000?",
+      options: ["0,1", "1", "10", "100"],
+      correct: 1
+    }, {
+      question: "Quantos minutos há em 1,5 horas?",
+      options: ["60", "75", "90", "120"],
+      correct: 2
+    }, {
+      question: "Resolva: 2x - 5 = 9. Qual é o valor de x?",
+      options: ["5", "6", "7", "8"],
+      correct: 2
+    }, {
+      question: "Quanto é 1² + 2² + 3²?",
+      options: ["9", "12", "14", "16"],
+      correct: 2
     }],
-    historia: [{
-      question: "Em que ano Moçambique se tornou independente?",
-      options: ["1974", "1975", "1976", "1977"],
+
+
+
+    portugues: [{
+      question: "Identifique o substantivo abstrato na frase: 'A felicidade é uma conquista diária.'",
+      options: ["Felicidade", "Conquista", "Diária", "Nenhuma das anteriores"],
+      correct: 0
+    }, {
+      question: "Qual é a função da palavra 'rápido' em: 'Ele foi rápido para concluir a tarefa.'?",
+      options: ["Substantivo", "Adjetivo", "Verbo", "Advérbio"],
+      correct: 1
+    }, {
+      question: "Qual é o plural de 'pão'?",
+      options: ["Pães", "Pãos", "Pões", "Paes"],
+      correct: 0
+    }, {
+      question: "Complete a frase: 'Eu ________ estudar mais.'",
+      options: ["devemos", "deveria", "dever", "deverei"],
+      correct: 1
+    }, {
+      question: "Qual das frases contém uma metáfora?",
+      options: ["Ele é forte como um leão", "A vida é um palco", "Estava tão feliz que parecia flutuar", "Estava tão quente quanto o deserto"],
+      correct: 1
+    }, {
+      question: "Qual é o sujeito na frase: 'Os alunos estudam para o exame final'?",
+      options: ["Os alunos", "Estudam", "Exame final", "Para o exame"],
+      correct: 0
+    }, {
+      question: "Classifique a oração: 'Quando cheguei, ele já tinha saído.'",
+      options: ["Coordenada", "Subordinada", "Simples", "Nominal"],
+      correct: 1
+    }, {
+      question: "Identifique o verbo transitivo direto: 'Ela comprou um livro novo.'",
+      options: ["Ela", "Comprou", "Livro", "Novo"],
+      correct: 1
+    }, {
+      question: "Qual é o tempo verbal de 'Nós estudaremos juntos amanhã'?",
+      options: ["Presente", "Passado", "Futuro do Presente", "Futuro do Pretérito"],
+      correct: 2
+    }, {
+      question: "O que é uma interjeição?",
+      options: ["Palavra que expressa emoção ou sentimento", "Palavra que liga orações", "Palavra que determina o verbo", "Palavra que indica lugar"],
+      correct: 0
+    }, {
+      question: "Qual é o sujeito na frase: 'Os alunos estudam na biblioteca.'?",
+      options: ["Os alunos", "Estudam", "Na biblioteca", "Os alunos estudam"],
+      correct: 0
+    }, {
+      question: "Qual é o tipo de predicado na frase: 'A menina é inteligente.'?",
+      options: ["Verbal", "Nominal", "Verbo-nominal", "Predicativo"],
+      correct: 1
+    }, {
+      question: "Qual é o plural de 'cidadão'?",
+      options: ["Cidadões", "Cidadãos", "Cidades", "Cidadãoses"],
+      correct: 1
+    }, {
+      question: "Qual é o antônimo de 'feliz'?",
+      options: ["Triste", "Contente", "Alegre", "Descontraído"],
+      correct: 0
+    }, {
+      question: "O que é um texto dissertativo argumentativo?",
+      options: ["Um texto que narra fatos", "Um texto que descreve pessoas", "Um texto que apresenta argumentos para defender uma tese", "Um texto que explica um processo"],
+      correct: 2
+    }, {
+      question: "Qual é o significado da palavra 'procrastinar'?",
+      options: ["Antecipar", "Adiar", "Resolver", "Confirmar"],
+      correct: 1
+    }, {
+      question: "Qual é a figura de linguagem usada na frase: 'O vento sussurrava entre as árvores'?",
+      options: ["Metáfora", "Personificação", "Ironia", "Eufemismo"],
+      correct: 1
+    }, {
+      question: "Qual é o verbo da frase: 'Nós compramos um presente ontem'?",
+      options: ["Compramos", "Um", "Presente", "Ontem"],
+      correct: 0
+    }, {
+      question: "Qual é o significado da expressão 'ficar de molho'?",
+      options: ["Tomar banho", "Estar em repouso", "Estar cozinhando", "Estar em apuros"],
+      correct: 1
+    }, {
+      question: "O que indica o prefixo 're-' na palavra 'rever'?",
+      options: ["Novidade", "Repetição", "Contrário", "Positividade"],
+      correct: 1
+    }, {
+      question: "Qual é o tempo verbal na frase: 'Eles estavam brincando no parque.'?",
+      options: ["Presente", "Pretérito perfeito", "Pretérito imperfeito", "Futuro do presente"],
+      correct: 2
+    }, {
+      question: "Qual é o gênero do substantivo 'análise'?",
+      options: ["Masculino", "Feminino", "Neutro", "Ambíguo"],
+      correct: 1
+    }, {
+      question: "Qual é a função da vírgula na frase: 'João, venha aqui agora.'?",
+      options: ["Separar termos iguais", "Indicar uma pausa", "Separar o vocativo", "Marcar uma enumeração"],
+      correct: 2
+    }, {
+      question: "Qual é a classificação da palavra 'felizmente'?",
+      options: ["Substantivo", "Adjetivo", "Advérbio", "Verbo"],
+      correct: 2
+    }, {
+      question: "Qual é o termo que complementa o verbo na frase: 'Nós assistimos ao filme.'?",
+      options: ["Objeto direto", "Objeto indireto", "Adjunto adverbial", "Sujeito"],
+      correct: 1
+    }, {
+      question: "Qual é o tipo de discurso usado na frase: 'Maria disse: 'Eu não quero ir ao parque'.'?",
+      options: ["Discurso direto", "Discurso indireto", "Discurso indireto livre", "Discurso narrativo"],
+      correct: 0
+    }, {
+      question: "Qual é o significado da palavra 'altruísmo'?",
+      options: ["Egoísmo", "Solidariedade", "Alegria", "Indiferença"],
+      correct: 1
+    }, {
+      question: "Qual é a figura de linguagem em 'Ele era forte como um touro'?",
+      options: ["Metáfora", "Comparação", "Ironia", "Personificação"],
+      correct: 1
+    }, {
+      question: "Qual é o plural de 'caráter'?",
+      options: ["Caráteres", "Caratares", "Carateis", "Caratazes"],
+      correct: 0
+    }, {
+      question: "Qual é o sinônimo de 'cômico'?",
+      options: ["Trágico", "Engraçado", "Sério", "Neutro"],
       correct: 1
     }],
+
+
+
+    historia: [{
+      question: "Quem foi o primeiro presidente de Moçambique independente?",
+      options: ["Joaquim Chissano", "Samora Machel", "Eduardo Mondlane", "Filipe Nyusi"],
+      correct: 1
+    }, {
+      question: "Em que ano Moçambique conquistou sua independência?",
+      options: ["1974", "1975", "1977", "1980"],
+      correct: 1
+    }, {
+      question: "Qual foi o principal movimento de libertação nacional em Moçambique?",
+      options: ["RENAMO", "FRELIMO", "MPLA", "PAIGC"],
+      correct: 1
+    }, {
+      question: "Quem foi o fundador da FRELIMO?",
+      options: ["Filipe Nyusi", "Eduardo Mondlane", "Samora Machel", "Joaquim Chissano"],
+      correct: 1
+    }, {
+      question: "Qual é a data da assinatura do Acordo Geral de Paz?",
+      options: ["4 de outubro de 1992", "7 de setembro de 1974", "25 de junho de 1975", "1 de dezembro de 1990"],
+      correct: 0
+    }, {
+      question: "Quando Moçambique se tornou independente de Portugal?",
+      options: ["1975", "1964", "1980", "1992"],
+      correct: 0
+    }, {
+      question: "Qual foi o principal movimento de libertação em Moçambique?",
+      options: ["FRELIMO", "RENAMO", "ANC", "MPLA"],
+      correct: 0
+    }, {
+      question: "Quem foi o primeiro presidente de Moçambique independente?",
+      options: ["Samora Machel", "Eduardo Mondlane", "Joaquim Chissano", "Filipe Nyusi"],
+      correct: 0
+    }, {
+      question: "Qual foi o principal motivo para a luta de libertação de Moçambique?",
+      options: ["Independência política", "Fim da escravidão", "Unificação de territórios", "Abolição da monarquia"],
+      correct: 0
+    }, {
+      question: "Em que ano a FRELIMO foi fundada?",
+      options: ["1962", "1964", "1970", "1975"],
+      correct: 0
+    }, {
+      question: "Quem foi Eduardo Mondlane?",
+      options: ["Fundador da FRELIMO", "Primeiro presidente de Moçambique", "Líder da RENAMO", "Governador colonial"],
+      correct: 0
+    }, {
+      question: "Qual foi o acordo que encerrou a Guerra Civil em Moçambique?",
+      options: ["Acordo de Lusaka", "Acordo de Roma", "Acordo de Nkomati", "Acordo de Maputo"],
+      correct: 1
+    }, {
+      question: "Quando foi assinada a paz entre o governo moçambicano e a RENAMO?",
+      options: ["1992", "1985", "2000", "1975"],
+      correct: 0
+    }, {
+      question: "Qual era o principal recurso explorado pelos colonizadores em Moçambique?",
+      options: ["Ouro", "Algodão", "Madeira", "Marfim"],
+      correct: 1
+    }, {
+      question: "Qual foi o impacto do sistema colonial português na agricultura moçambicana?",
+      options: ["Promoveu a agricultura de subsistência", "Introduziu a monocultura forçada", "Favoreceu pequenos agricultores", "Erradicou a fome"],
+      correct: 1
+    }, {
+      question: "O que era o sistema de trabalho forçado em Moçambique durante a colonização?",
+      options: ["Sistema de escravidão", "Trabalho compulsório em plantações", "Contrato de trabalho justo", "Emprego para todos"],
+      correct: 1
+    }, {
+      question: "Qual foi o papel da guerrilha na luta pela independência de Moçambique?",
+      options: ["Conquistar áreas estratégicas", "Negociar com Portugal", "Unir os partidos políticos", "Difundir a cultura local"],
+      correct: 0
+    }, {
+      question: "Quem assinou o Acordo de Lusaka em 1974?",
+      options: ["FRELIMO e Portugal", "RENAMO e FRELIMO", "Portugal e ONU", "Moçambique e África do Sul"],
+      correct: 0
+    }, {
+      question: "Qual foi a capital de Moçambique antes da independência?",
+      options: ["Lourenço Marques", "Maputo", "Beira", "Nampula"],
+      correct: 0
+    }, {
+      question: "Qual foi o efeito da Guerra Fria em Moçambique?",
+      options: ["Intensificou a Guerra Civil", "Encerrou a luta de libertação", "Isolou o país", "Favoreceu o comércio"],
+      correct: 0
+    }, {
+      question: "O que representou a proclamação da independência de Moçambique?",
+      options: ["Fim do colonialismo português", "Início da escravidão", "Separação de regiões", "Unificação de países africanos"],
+      correct: 0
+    }, {
+      question: "Em que ano Samora Machel faleceu?",
+      options: ["1986", "1980", "1992", "1975"],
+      correct: 0
+    }, {
+      question: "Qual foi o principal desafio após a independência de Moçambique?",
+      options: ["Reconstrução nacional", "Fim do comércio internacional", "Expansão territorial", "Colonização interna"],
+      correct: 0
+    }, {
+      question: "Quem sucedeu Samora Machel como presidente de Moçambique?",
+      options: ["Joaquim Chissano", "Filipe Nyusi", "Eduardo Mondlane", "Armando Guebuza"],
+      correct: 0
+    }, {
+      question: "O que foi o Programa de Ajustamento Estrutural em Moçambique?",
+      options: ["Reforma econômica", "Plano de guerra", "Acordo de paz", "Projeto de saúde"],
+      correct: 0
+    }, {
+      question: "Quem foi André Matsangaissa?",
+      options: ["Primeiro líder da RENAMO", "Fundador da FRELIMO", "Presidente de Moçambique", "Governador colonial"],
+      correct: 0
+    }, {
+      question: "Qual era o objetivo da RENAMO durante a Guerra Civil?",
+      options: ["Tomar o poder", "Manter a paz", "Abolir a independência", "Unificar a África"],
+      correct: 0
+    }, {
+      question: "Qual foi o papel da ONU no processo de paz em Moçambique?",
+      options: ["Supervisionar o cessar-fogo", "Financiar a guerra", "Apoiar a colonização", "Organizar eleições"],
+      correct: 0
+    }, {
+      question: "O que simboliza a bandeira de Moçambique?",
+      options: ["Luta e esperança", "Colonização", "Independência europeia", "Neutralidade"],
+      correct: 0
+    }, {
+      question: "Qual foi o impacto da Guerra Civil na economia moçambicana?",
+      options: ["Destruição de infraestruturas", "Aumento da produção", "Fortalecimento do comércio", "Melhora na educação"],
+      correct: 0
+    }, {
+      question: "Quando foram realizadas as primeiras eleições multipartidárias em Moçambique?",
+      options: ["1994", "1992", "1986", "2000"],
+      correct: 0
+    }, {
+      question: "Qual é a principal língua oficial de Moçambique?",
+      options: ["Português", "Inglês", "Swahili", "Xangana"],
+      correct: 0
+    }, {
+      question: "Qual foi a importância de Mondlane no contexto histórico de Moçambique?",
+      options: ["Articulou a luta de libertação", "Governou o país após a independência", "Liderou a guerrilha da RENAMO", "Organizou a economia pós-guerra"],
+      correct: 0
+    }, {
+      question: "Quem colonizou Moçambique antes de Portugal?",
+      options: ["Árabes", "Ingleses", "Chineses", "Espanhóis"],
+      correct: 0
+    }, {
+      question: "O que foi o Tratado de Lourenço Marques?",
+      options: ["Acordo entre portugueses e ingleses", "Independência de Moçambique", "Divisão territorial africana", "Pacto de comércio"],
+      correct: 0
+    }, {
+      question: "Qual foi o papel da escravidão na colonização de Moçambique?",
+      options: ["Exportação de mão de obra", "Fim da economia agrícola", "Fortalecimento do comércio local", "Expansão do cristianismo"],
+      correct: 0
+    }, {
+      question: "Quando foi abolida a escravidão em Moçambique?",
+      options: ["1878", "1884", "1869", "1900"],
+      correct: 2
+    }, {
+      question: "Quem foram os Nguni na história de Moçambique?",
+      options: ["Povo guerreiro", "Colonizadores", "Mercadores europeus", "Exploradores portugueses"],
+      correct: 0
+    }, {
+      question: "Qual foi a principal consequência da Conferência de Berlim para Moçambique?",
+      options: ["Divisão colonial africana", "Independência política", "Unificação de tribos", "Fim do comércio europeu"],
+      correct: 0
+    }, {
+      question: "Qual é a relação de Moçambique com o Oceano Índico na história?",
+      options: ["Rota de comércio marítimo", "Barreira geográfica", "Exploração de petróleo", "Extensão territorial"],
+      correct: 0
+    }, {
+      question: "Quem liderou a assinatura dos Acordos de Roma?",
+      options: ["Joaquim Chissano", "Samora Machel", "Eduardo Mondlane", "Filipe Nyusi"],
+      correct: 0
+    }, {
+      question: "O que foi a Operação Produção em Moçambique?",
+      options: ["Programa de trabalho agrícola", "Campanha militar", "Acordo de paz", "Projeto de industrialização"],
+      correct: 0
+    }, {
+      question: "Qual era o objetivo do Movimento das Forças Armadas de Portugal?",
+      options: ["Promover a descolonização", "Expandir o império", "Manter o colonialismo", "Unir territórios africanos"],
+      correct: 0
+    }],
+
+
+
+
     quimica: [{
+
+
+
+  
       question: "Qual é o símbolo químico do Ouro?",
       options: ["Au", "Ag", "Fe", "Cu"],
       correct: 0
     }],
     biologia: [{
+
+
+
+
+  
       question: "Qual é o maior órgão do corpo humano?",
       options: ["Coração", "Pulmão", "Pele", "Fígado"],
       correct: 2
     }],
     contabilidade: [{
+
+
+
+
+  
       question: "O que é um passivo?",
       options: ["Um bem", "Uma dívida", "Um lucro", "Um investimento"],
       correct: 1
     }],
     fisica: [{
+
+
+
+
+  
       question: "Qual é a unidade de medida de força?",
       options: ["Watt", "Newton", "Pascal", "Joule"],
       correct: 1
     }],
     geologia: [{
+
+
+
+
+  
       question: "Exemplo de questão de Geologia",
       options: ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
       correct: 0
     }],
     moda: [{
+
+
+
+  
       question: "Exemplo de questão de Moda",
       options: ["Opção 1", "Opção 2", "Opção 3", "Opção 4"],
       correct: 0
