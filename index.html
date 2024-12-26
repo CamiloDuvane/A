@@ -2415,15 +2415,120 @@ function getQuestionsBySubject(subject) {
       }], 
 
 
-    quimica: [{
 
-
-
-  
-      question: "Qual é o símbolo químico do Ouro?",
-      options: ["Au", "Ag", "Fe", "Cu"],
+  estatistica: [
+    {
+      question: "O que é a média aritmética?",
+      options: ["A soma dos valores dividida pelo número total de valores", "O valor mais frequente em um conjunto de dados", "A diferença entre o maior e o menor valor", "A raiz quadrada da variância"],
       correct: 0
-    }],
+    }, {
+      question: "Qual é o valor da mediana no conjunto de dados [3, 7, 8, 9, 10]?",
+      options: ["7", "8", "9", "10"],
+      correct: 1
+    }, {
+      question: "O que é um desvio padrão?",
+      options: ["A soma de todos os dados", "Uma medida de dispersão dos dados", "A frequência relativa dos dados", "A diferença entre os dados"],
+      correct: 1
+    }, {
+      question: "Qual é a moda no conjunto de dados [2, 3, 3, 5, 7]?",
+      options: ["2", "3", "5", "7"],
+      correct: 1
+    }, {
+      question: "Se o desvio padrão de um conjunto de dados é 0, o que isso significa?",
+      options: ["Todos os valores são iguais", "Os valores estão muito dispersos", "A média é negativa", "Os valores estão próximos da média"],
+      correct: 0
+    }, {
+      question: "O que é um histograma?",
+      options: ["Um gráfico de linhas", "Um gráfico de barras que representa frequências", "Um gráfico de dispersão", "Um gráfico de setores"],
+      correct: 1
+    }, {
+      question: "Como calcular a variância?",
+      options: ["Somar os valores e dividir pelo total", "Somar os quadrados dos desvios e dividir pelo número de observações", "Encontrar a diferença entre o maior e o menor valor", "Multiplicar a média pelos valores"],
+      correct: 1
+    }, {
+      question: "Qual é a fórmula da probabilidade?",
+      options: ["Casos favoráveis / Casos possíveis", "Casos possíveis / Casos favoráveis", "Frequência relativa x 100", "Casos possíveis - Casos favoráveis"],
+      correct: 0
+    }, {
+      question: "O que é uma amostra na Estatística?",
+      options: ["A população inteira", "Um subconjunto da população", "Os dados fora do intervalo", "Os valores da moda"],
+      correct: 1
+    }, {
+      question: "Qual é o objetivo da Estatística Descritiva?",
+      options: ["Descrever e resumir os dados", "Testar hipóteses", "Prever valores futuros", "Comparar populações diferentes"],
+      correct: 0
+    }, {
+      question: "Qual é a diferença entre população e amostra?",
+      options: ["População é um subconjunto, amostra é o todo", "População é o conjunto total, amostra é uma parte", "Amostra é maior que a população", "Não há diferença entre os dois"],
+      correct: 1
+    }, {
+      question: "O que é a frequência absoluta?",
+      options: ["O número de vezes que um valor ocorre", "A porcentagem de um valor", "A média dos dados", "A soma dos dados"],
+      correct: 0
+    }, {
+      question: "O que é um gráfico de dispersão usado para?",
+      options: ["Mostrar a relação entre duas variáveis", "Mostrar frequências absolutas", "Mostrar percentuais", "Mostrar a soma dos dados"],
+      correct: 0
+    }, {
+      question: "O que significa a sigla 'IQR'?",
+      options: ["Intervalo de Qualidade Razoável", "Interquartil Range", "Intervalo de Quadrados Retangulares", "Início de Quociente Relativo"],
+      correct: 1
+    }, {
+      question: "Qual é a diferença entre média e mediana?",
+      options: ["Média é o valor central, mediana é a soma", "Média é a soma dividida, mediana é o valor central", "Média é a raiz quadrada, mediana é a moda", "Não há diferença"],
+      correct: 1
+    }, {
+      question: "O que é uma variável discreta?",
+      options: ["Uma variável que pode assumir qualquer valor", "Uma variável que assume valores contáveis", "Uma variável qualitativa", "Uma variável contínua"],
+      correct: 1
+    }, {
+      question: "O que é uma distribuição normal?",
+      options: ["Uma distribuição simétrica com forma de sino", "Uma distribuição assimétrica", "Uma distribuição com dois picos", "Uma distribuição aleatória"],
+      correct: 0
+    }, {
+      question: "O que é o coeficiente de correlação?",
+      options: ["Uma medida de dispersão", "Uma medida de relação entre duas variáveis", "A média de duas variáveis", "A variância dividida pela média"],
+      correct: 1
+    }, {
+      question: "Qual é a fórmula do coeficiente de variação?",
+      options: ["(Desvio padrão / Média) x 100", "(Média / Desvio padrão) x 100", "(Moda / Média) x 100", "(Mediana / Média) x 100"],
+      correct: 0
+    }, {
+      question: "O que significa uma correlação de -1?",
+      options: ["Nenhuma correlação", "Correlação positiva perfeita", "Correlação negativa perfeita", "Correlação nula"],
+      correct: 2
+    }, {
+      question: "Qual é a principal função de um boxplot?",
+      options: ["Exibir os quartis e possíveis outliers", "Exibir uma média aritmética", "Exibir uma curva normal", "Exibir a soma dos valores"],
+      correct: 0
+    }, {
+      question: "O que é um outlier?",
+      options: ["Um valor que se repete com frequência", "Um valor extremo fora do padrão dos dados", "A moda do conjunto de dados", "Um intervalo entre os dados"],
+      correct: 1
+    }, {
+      question: "O que é o teorema central do limite?",
+      options: ["Afirma que a média é sempre zero", "Afirma que a soma dos dados é constante", "Afirma que a distribuição da média tende a ser normal", "Afirma que a moda é a mais frequente"],
+      correct: 2
+    }, {
+      question: "O que significa uma probabilidade de 0,8?",
+      options: ["Um evento impossível", "Um evento improvável", "Um evento muito provável", "Um evento certo"],
+      correct: 2
+    }, {
+      question: "Qual é a principal diferença entre variáveis qualitativas e quantitativas?",
+      options: ["Quantitativas representam categorias, qualitativas representam números", "Qualitativas representam categorias, quantitativas representam números", "Não há diferença", "Quantitativas são discretas, qualitativas são contínuas"],
+      correct: 1
+    }, {
+      question: "Qual é a relação entre variância e desvio padrão?",
+      options: ["Variância é o quadrado do desvio padrão", "Desvio padrão é o quadrado da variância", "Não há relação", "Variância é a raiz do desvio padrão"],
+      correct: 0
+    }, {
+      question: "O que é um intervalo de confiança?",
+      options: ["Um intervalo entre valores mínimos e máximos", "Um intervalo que contém o parâmetro populacional com certa probabilidade", "A diferença entre a média e a moda", "A soma de todos os valores"],
+      correct: 1
+    }], 
+
+
+    
     biologia: [{
 
 
